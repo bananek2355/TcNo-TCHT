@@ -85,7 +85,7 @@ if ($answer -in "Y", "y") {
     $extraArgs += " --compile craftbukkit"
 }
 
-java -jar BuildTools.jar --rev 1.20 $extraArgs
+java -jar BuildTools.jar --rev 1.21 $extraArgs
 
 # 4. Create sample server .bat file
 Set-Content -Path "start.bat" -Value "@echo off`njava -Xmx2G -jar spigot-1.20.jar nogui`npause"
